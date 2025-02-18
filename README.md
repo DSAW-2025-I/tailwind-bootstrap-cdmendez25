@@ -76,3 +76,4 @@ Once you've added your information to the template, delete this file and rename 
 **Have fun building!** 🚀
 
 # Carlos Andres Diaz Mendez
+**GitHub Pages:** https://dsaw-2025-i.github.io/tailwind-bootstrap-cdmendez25/
