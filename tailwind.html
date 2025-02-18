@@ -6,41 +6,38 @@
     <title>Tailwind | Stats Preview Card Component</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 flex justify-center items-center min-h-screen">
-    <div class="container bg-black p-5 rounded-lg flex justify-center items-center max-w-5xl h-[600px]">
-        <div class="p-3 bg-gray-800 text-white rounded-lg flex items-center justify-center w-3/4 h-3/4">
+<body class="bg-gray-900 flex justify-center items-center min-h-screen p-4">
+    <div class="container bg-black p-5 rounded-lg flex flex-col md:flex-row justify-center items-center max-w-5xl w-full h-auto md:h-[600px]">
+        <div class="p-3 bg-gray-800 text-white rounded-lg flex flex-col md:flex-row items-center justify-center w-full">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center w-full">
-                <!-- Sección Izquierda -->
-                <div class="text-left flex flex-col gap-4">
-                    <h1 class="font-bold text-3xl">Get <span class="text-purple-400">insights</span> that help your business grow.</h1>
-                    <p class="text-gray-300">
+                <div class="text-left flex flex-col gap-4 p-4">
+                    <h1 class="font-bold text-3xl md:text-4xl">Get <span class="text-purple-400">insights</span> that help your business grow.</h1>
+                    <p class="text-gray-300 text-sm md:text-base">
                         Discover the benefits of data analytics and make better decisions regarding revenue, 
                         customer experience, and overall efficiency.
                     </p>
-                    <div class="flex justify-between w-full mt-3">
+                    <div class="flex flex-col md:flex-row justify-between w-full mt-3">
                         <div class="text-center">
                             <strong class="text-2xl">10k+</strong>
-                            <p class="m-0">Companies</p>
+                            <p class="m-0 text-sm md:text-base">Companies</p>
                         </div>
                         <div class="text-center">
                             <strong class="text-2xl">314</strong>
-                            <p class="m-0">Templates</p>
+                            <p class="m-0 text-sm md:text-base">Templates</p>
                         </div>
                         <div class="text-center">
                             <strong class="text-2xl">12m+</strong>
-                            <p class="m-0">Queries</p>
+                            <p class="m-0 text-sm md:text-base">Queries</p>
                         </div>
                     </div>
                 </div>
-                <!-- Sección Derecha -->
-                <div class="relative w-full h-full">
-                    <img src="./images/image-header-desktop.jpg" class="w-full h-full object-cover brightness-50 saturate-200 hue-rotate-90" alt="Data Insights">
-                    <div class="absolute inset-0 bg-purple-400 opacity-50"></div>
+                <div class="relative w-full">
+                    <img src="./images/image-header-desktop.jpg" class="w-full h-full object-cover brightness-50 saturate-200 hue-rotate-90 rounded-lg" alt="Data Insights">
+                    <div class="absolute inset-0 bg-purple-400 opacity-50 rounded-lg"></div>
                 </div>
             </div>
         </div>
     </div>
-
     <footer class="text-center text-gray-400 mt-4 py-3">
         Coded by <a href="#" class="text-purple-400">Carlos Andres Diaz Mendez</a>.
     </footer>
