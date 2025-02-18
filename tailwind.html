@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Tailwind | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind | Stats Preview Card Component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body class="bg-gray-900 flex justify-center items-center min-h-screen p-4">
+    <div class="container bg-black p-5 rounded-lg flex flex-col md:flex-row justify-center items-center max-w-5xl w-full h-auto md:h-[600px]">
+        <div class="p-3 bg-gray-800 text-white rounded-lg flex flex-col md:flex-row items-center justify-center w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center w-full">
+                <div class="text-left flex flex-col gap-4 p-4">
+                    <h1 class="font-bold text-3xl md:text-4xl">Get <span class="text-purple-400">insights</span> that help your business grow.</h1>
+                    <p class="text-gray-300 text-sm md:text-base">
+                        Discover the benefits of data analytics and make better decisions regarding revenue, 
+                        customer experience, and overall efficiency.
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-between w-full mt-3">
+                        <div class="text-center">
+                            <strong class="text-2xl">10k+</strong>
+                            <p class="m-0 text-sm md:text-base">Companies</p>
+                        </div>
+                        <div class="text-center">
+                            <strong class="text-2xl">314</strong>
+                            <p class="m-0 text-sm md:text-base">Templates</p>
+                        </div>
+                        <div class="text-center">
+                            <strong class="text-2xl">12m+</strong>
+                            <p class="m-0 text-sm md:text-base">Queries</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative w-full">
+                    <img src="./images/image-header-desktop.jpg" class="w-full h-full object-cover brightness-50 saturate-200 hue-rotate-90 rounded-lg" alt="Data Insights">
+                    <div class="absolute inset-0 bg-purple-400 opacity-50 rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-gray-400 mt-4 py-3">
+        Coded by <a href="#" class="text-purple-400">Carlos Andres Diaz Mendez</a>.
+    </footer>
 </body>
 </html>
